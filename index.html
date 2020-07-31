@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menjanje pozadine</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div id="sadrzaj">
+<div id="prvi-red">
+    <div id="broj">Broj boja:</div>
+    <input type="number" id="broj-boja" placeholder="unesite koliko želite boja">
+</div>
+<div id="drugi-red">
+    <span id="spantxt">nasumican smer</span>
+    <label class="switch">
+        <input type="checkbox"  id="nasumican-smer">
+        <span class="slider round"></span>
+      </label>
+      <button id="odabirsmera" onclick="odaberismer()">odaberi smer</button>
+</div> 
+    <button id="dugme" onclick="promeni()">promeni</button>
+    <p id="kod">white</p>
+</div>
+<div id="kontejner">
+    <button class="odabran" id="gd" onclick="smerodabran(1)">odozgo na dole</button>
+    <button id="ld" onclick="smerodabran(2)"> s leva na desno</button>
+    <button id="k1" onclick="smerodabran(3)">koso (od gore-levo do dole desno</button>
+    <button id="k2" onclick="smerodabran(4)">koso (od gore-desno do dole levo</button>
+</div>
+</body>
+</html>
